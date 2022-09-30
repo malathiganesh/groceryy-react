@@ -1,0 +1,57 @@
+.header{
+    background-color: #3aafa9;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* color: #da7b93; */
+}
+.head_first{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 700;
+    
+}
+.head_first > span{
+    color: #def2f1;
+}
+.head_scnd{
+    display: flex;
+    align-items: center;
+    background-color: #def2f1;
+    border-radius: 3px;
+}
+.head_scnd > input{
+    border: none;
+    outline: none;
+    width: 36vw;
+    padding: 10px 15px;
+    border-radius: 3px;
+    background-color: #def2f1;
+}
+/* .head_scnd > AiOutlineShoppingCart{
+    color: red;
+} */
+/* .react-icon{
+    color: red; */
+/* } */
+.head_third >button {
+    border: none;
+    outline: none;
+    width: 9vw;
+    background-color: #3aafa9;
+    color:#def2f1 ;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 7px;
+}
+/* .head_fourth{
+    display: flex;
+    align-items: center;
+} */
+/* .head_fourth >p{
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+} */

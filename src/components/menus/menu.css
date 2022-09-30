@@ -1,0 +1,17 @@
+.mcontaine{
+    width: 90%;
+    margin: auto;
+    border: solid 2px black;
+}
+.mWrapper{
+    margin: 2% auto 0px auto;
+    /* border: solid 2px aqua; */
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.menus{
+    text-align: center;
+    margin-top: 80px;
+}

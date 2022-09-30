@@ -1,0 +1,32 @@
+.menulist{
+    border-radius: 10px;
+    border: solid 2px #3aafa9;
+    width: 200px;
+    /* background-color: #3aafa9; */
+    background-color: #def2f1;
+    height: 250px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    /* box-shadow: 0 0 10px 5px rgba(95, 82, 82, 0.6); */
+}
+.menulist:hover{
+    transform: scale(1.07);
+    box-shadow: 5px 10px 18px #def2f1;
+}
+.menulist div:nth-child(1) img{
+    border-radius:10px 10px 10px 10px ;
+    width: 180px;
+    height: 160px;
+    margin: 10px 25px 0px 8px;
+}
+.menulist div:nth-child(2) p{
+    text-align: center;
+    /* color: #3aafa9; */
+    font-weight: bold;
+    margin-top: 20px;
+
+}
+/* .menulist div:nth-child(1) img:hover{ */
+    /* transform: scale(1.05); */
+    /* box-shadow: 5px 10px 18px #def2f1; */
+/* }     */

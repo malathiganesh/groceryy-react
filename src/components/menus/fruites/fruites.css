@@ -1,0 +1,89 @@
+
+
+.fruitsItems{
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    position: relative;
+}
+.detail{
+    border: 1px black solid;
+    border-radius: 10px;
+    width: 200px;
+    height: 300px;
+    padding: 20px 10px 20px 10px;
+    line-height: 1px;
+    background-color:#3aafa9;
+    /* position: relative; */
+    /* row-gap: 0; */
+}
+ .dealsImage >img{
+    /* margin-top: 20px; */
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+}
+/* .abouts{ */
+/* padding-left: 40px; */
+/* } */
+/* .qty{
+    display: flex;
+    justify-content: center;
+   
+}
+.qty >p{
+   padding-right: 20px;
+}
+.qty >button{
+    height: 3vh;
+    margin-top: 8px;
+} */
+.mrp{
+    text-decoration: line-through;
+}
+.rate{
+display: flex;
+justify-content: space-evenly;
+/* padding-right: 20px; */
+}
+.original_rate{
+    font-weight: bold;
+}
+.abouts >button{
+    width: 100%;
+    margin-top: 20px;
+    background-color: #def2f1;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+}
+.abouts >h4{
+    padding-left: 30px;
+}
+.abouts >p{
+    padding-left: 30px;
+}
+.offer{
+    /* border: 3px dotted red ; */
+    width:35px;
+    border-radius: 50%;
+    height: 35px;
+    line-height: 12px;
+    /* padding-left: 6px; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* padding: 2px 4px; */
+    position: absolute;
+    top: 6px;
+    font-size: 12px;
+    /* right: 80%; */
+    /* bottom: -1px; */
+    left:5px;
+    background-color: orangered;
+    /* border: solid 1px black; */
+    font-weight: 600;
+}
+.offer >span{
+    padding-left: 8px;
+    color: white;
+    line-height: 10px;
+}
