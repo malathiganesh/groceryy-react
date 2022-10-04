@@ -1,12 +1,19 @@
 import { useState } from "react"
+import { useContext } from "react";
+import AddContext from "../../context";
 import './cartitem.css';
 function CartItems(props) {
+    const remove = useContext(AddContext).remove;
     const originalPrice = (props.offer / 100) * (props.price)
     const save = (props.price) - (originalPrice)
     const [count,setCount] = useState(1)
     // useEffect(()=>{
     //     setCount(count+1)
     // },[count])
+    // const decreaseHandler=()=>{
+    //     console.log('malathi');
+    //     alert("summa")
+    // }
 
 return(<><div className="addcart">
     <div className="ofer">
@@ -27,22 +34,26 @@ return(<><div className="addcart">
                 <p className="qty">Qty:</p>
             </div>
             </div>
-        
+                  <div className="ad">
                   <div className="quantity">
-                    <button onClick={()=>{
+                  <button onClick={()=>{
                     //  if(count==1){
                         setCount(count+1)
                     // }
+                    // console.log('summa');
                         // setCount(count+1)
                         
-                     }}>+</button> <p className="count">{count}</p>
-                     <button onClick={()=>{
-                        //  if(count>1){
-                             setCount(count-1)
-                        //  }
+                     }}>+</button><p className="count">{count}</p> </div>
+                     <div className="decrease">
+                  <button onClick={()=>{
+                    if(count>0){
+                        setCount(count-1)
+                    }else{
+                        remove(props.name)
                      }
-                      
-                     }>-</button>
+                        // console.log('hi');
+                    }}>-</button>  
+                     </div>
                      </div>
                      
           

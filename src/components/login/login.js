@@ -31,8 +31,8 @@ const Login=()=>{
     
     return(
  
-       <div className="login" onSubmit={(e)=>handleSubmit(e)}>
-        <form className="login_form">
+       <div className="login" >
+        <form className="login_form" onSubmit={(e)=>handleSubmit(e)}>
           <p className="ic"><FaRegUserCircle fontSize={100} color='#3aafa9' /></p>
           <input type='name' placeholder='Name' value={name} onChange={(e)=>setName(e.target.value)} />
           <input type='email' placeholder='Email' value={email} onChange={(e)=>setEmail(e.target.value)} />

@@ -53,12 +53,13 @@
     margin-top: 50%;
     padding: 0px 5px 0px 5px;
     position: absolute;
-    bottom: -23px;
+    bottom: -20px;
     left: 30px;
 }
 .quantity >button{
     outline: none;
     border: none;
+    background-color: #def2f1;
 }
 .qty{
     padding-top: 30px;
@@ -68,4 +69,19 @@
     width: 500px;
     font-size: 25px;
     background-color: #3aafa9;
+}
+.ad{
+    position: relative;
+}
+.decrease{
+    /* padding-left: 70%; */
+    /* padding-top: 50%; */
+    position: absolute;
+    bottom: 44px;
+    left: 63%; 
+}
+.decrease >button{
+    border: none;
+    outline: none;
+    background-color: #def2f1;
 }

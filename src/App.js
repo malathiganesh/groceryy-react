@@ -9,6 +9,7 @@ import AddContext from './context';
 import Fruitslist from './components/menus/fruites/fruitelist';
 import Cartholder from  './components/addcart/cartholder';
 import TopDeals from './components/topdeals/topdeals';
+import Slider from './components/Slideshow';
 // import './App.css';
 
 function App() {
@@ -20,7 +21,18 @@ function App() {
         return[item,...preitems]
       })
     }
-
+    function remove(name){
+      let newArr = []
+      let index = 0
+      for(let i = 0; i<cart.length;i++){
+          if(cart[i].name != name){
+              newArr[index] = cart[i]
+              index++
+          }
+      }
+      setCart(newArr)
+     
+  }
     const [veg, setVeg] = useState([]);
     const [fru, setFru] = useState([]);
     const [gro, setGro] = useState([]);
@@ -53,8 +65,9 @@ function App() {
   },[user])
   return (
     <div className="App">
-      <AddContext.Provider value={{addCart,cart,setQty,qty,total}}>
+      <AddContext.Provider value={{addCart,remove,cart,setQty,qty,total}}>
       <Header/>
+      <Slider/>
       <Routes>
         <Route  index element={<Menus/>}></Route>
         <Route path='/item/:lists' element={<Fruitslist/>}></Route>
